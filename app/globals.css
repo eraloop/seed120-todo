@@ -468,11 +468,20 @@ body {
   justify-content: center;
 }
 
-.modal-container {
+.modal-wrapper {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  inset: 0;
+  z-index: 51;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  /* Allow clicks to pass through to backdrop */
+}
+
+.modal-container {
+  position: relative;
+  /* Removed fixed positioning and transform since wrapper handles centering */
   background: var(--color-surface);
   border-radius: var(--radius);
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
@@ -480,7 +489,8 @@ body {
   max-width: 540px;
   max-height: 90vh;
   overflow-y: auto;
-  z-index: 51;
+  pointer-events: auto;
+  /* Re-enable pointer events for the modal content */
   padding: 2rem;
 }
 

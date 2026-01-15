@@ -99,8 +99,7 @@ export default function Home() {
       <Header onAddNewClick={() => setIsAddModalOpen(true)} />
 
       <main className="main-content">
-        
-
+      
         <FilterTabs />
 
         {loading ? (
