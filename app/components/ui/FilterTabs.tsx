@@ -37,7 +37,6 @@
 //   );
 // }
 
-
 "use client";
 
 import { useAppDispatch, useAppSelector } from "@/app/store/global.state";
@@ -82,9 +81,7 @@ export default function FilterTabs() {
           transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
           backgroundColor: filter === "active" ? '#ffffff' : 'transparent',
           color: filter === "active" ? '#1f2937' : '#6b7280',
-          boxShadow: filter === "active" 
-            ? '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)' 
-            : 'none',
+
           transform: filter === "active" ? 'scale(1)' : 'scale(0.98)',
         }}
       >
@@ -102,8 +99,8 @@ export default function FilterTabs() {
               fontSize: '0.75rem',
               fontWeight: '600',
               borderRadius: '0.5rem',
-              backgroundColor: filter === "active" ? '#3b82f6' : '#d1d5db',
-              color: filter === "active" ? '#ffffff' : '#6b7280',
+              backgroundColor: filter === "active" ? '#1f2937' : '#d1d5db',
+              color: '#ffffff',
               transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
             }}
           >
@@ -128,9 +125,7 @@ export default function FilterTabs() {
           transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
           backgroundColor: filter === "completed" ? '#ffffff' : 'transparent',
           color: filter === "completed" ? '#1f2937' : '#6b7280',
-          boxShadow: filter === "completed" 
-            ? '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)' 
-            : 'none',
+
           transform: filter === "completed" ? 'scale(1)' : 'scale(0.98)',
         }}
       >
@@ -148,8 +143,8 @@ export default function FilterTabs() {
               fontSize: '0.75rem',
               fontWeight: '600',
               borderRadius: '0.5rem',
-              backgroundColor: filter === "completed" ? '#10b981' : '#d1d5db',
-              color: filter === "completed" ? '#ffffff' : '#6b7280',
+              backgroundColor: filter === "completed" ? '#1f2937' : '#d1d5db',
+              color: '#ffffff',
               transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
             }}
           >
