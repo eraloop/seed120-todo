@@ -69,7 +69,22 @@ export default function EditTodoModal({
             exit={{ opacity: 0 }}
             onClick={handleClose}
           />
-          <div className="modal-wrapper">
+          <div 
+             className="modal-wrapper"
+            style={{
+              position: 'fixed',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              zIndex: 51,
+              padding: '1rem',
+              pointerEvents: 'none'
+            }}
+          >
             <motion.div
               className="modal-container"
               initial={{ opacity: 0, scale: 0.9, y: 20 }}
